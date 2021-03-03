@@ -1,0 +1,903 @@
+{
+  "intents": [
+    {
+      "intent": "ABNT",
+      "examples": [
+        {
+          "text": "ajuda com a abnt"
+        },
+        {
+          "text": "Associação Brasileira de Normas Técnicas"
+        },
+        {
+          "text": "com a ABNT"
+        },
+        {
+          "text": "formatação de trabalho"
+        },
+        {
+          "text": "mudancas na abnt"
+        },
+        {
+          "text": "mudou na abnt"
+        },
+        {
+          "text": "Normas Brasileiras"
+        },
+        {
+          "text": "Normas da ABNT"
+        },
+        {
+          "text": "normas padrão"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "bitly",
+      "examples": [
+        {
+          "text": "diminuir um url"
+        },
+        {
+          "text": "encurtar um url"
+        },
+        {
+          "text": "encurto uma url"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "elaboracao",
+      "examples": [
+        {
+          "text": "criar meu tcc"
+        },
+        {
+          "text": "elaborando meu tcc"
+        },
+        {
+          "text": "elaborar meu tcc"
+        },
+        {
+          "text": "escrever meu tcc"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "EntregaTrabalhoAcademico",
+      "examples": [
+        {
+          "text": "Entrega de TCC"
+        },
+        {
+          "text": "Entregar TCC"
+        },
+        {
+          "text": "Entregar um trabalho"
+        },
+        {
+          "text": "enviar trabalho"
+        },
+        {
+          "text": "envio de tcc"
+        },
+        {
+          "text": "submeter um tcc"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "FichaCatalografica",
+      "examples": [
+        {
+          "text": "Criar uma ficha catalografica"
+        },
+        {
+          "text": "fichar"
+        },
+        {
+          "text": "preenchendo ficha"
+        },
+        {
+          "text": "preencher fixa"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "greet",
+      "examples": [
+        {
+          "text": "blz"
+        },
+        {
+          "text": "oi"
+        },
+        {
+          "text": "ola"
+        },
+        {
+          "text": "opa eae"
+        },
+        {
+          "text": "saudacoes amizade"
+        },
+        {
+          "text": "sauve"
+        },
+        {
+          "text": "tranquilo"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Latex",
+      "examples": [
+        {
+          "text": "editor de documentos"
+        },
+        {
+          "text": "Editor de teto"
+        },
+        {
+          "text": "Formatar arquivos"
+        },
+        {
+          "text": "Formatar um trablaho"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Mendeley",
+      "examples": [
+        {
+          "text": "achar pesquisadores"
+        },
+        {
+          "text": "arquivar um documento"
+        },
+        {
+          "text": "buscar arquivos"
+        },
+        {
+          "text": "compartilhar documentos"
+        },
+        {
+          "text": "gerenciar referencias"
+        },
+        {
+          "text": "Mendeley"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "More",
+      "examples": [
+        {
+          "text": "MORE"
+        },
+        {
+          "text": "preciso de referencias"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "NormalizarTrabalhoAcademico",
+      "examples": [
+        {
+          "text": "Normalizar uma trabalho academico"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Plagio",
+      "examples": [
+        {
+          "text": "achar plagio"
+        },
+        {
+          "text": "copiou o meu trabalho"
+        },
+        {
+          "text": "copiraram trabalho"
+        },
+        {
+          "text": "fui plagiado"
+        },
+        {
+          "text": "Reportar um Plagio"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "ABNT",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "ABNT",
+          "synonyms": [
+            "Associação Brasileira de Normas Técnicas",
+            "normalizacao da lingua brasileira",
+            "normas abnt",
+            "regras de linguagem brasileira"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "aluno",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "eu",
+          "synonyms": [
+            "meu grupo",
+            "minha sala",
+            "nos"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "citacao",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "citacao",
+          "synonyms": [
+            "citacoes",
+            "citar"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Documento",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "trabalho",
+          "synonyms": [
+            "aritgos academicos",
+            "documento",
+            "papers academicos",
+            "projeto de conclusao de curso",
+            "tcc",
+            "tccs",
+            "trabalho academico",
+            "trabalho universitario"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "estrutura",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "estrutura",
+          "synonyms": [
+            "necessario em tcc",
+            "partes do tcc"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "ficha",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "ficha catalografica",
+          "synonyms": [
+            "catalografica",
+            "ficha",
+            "fichamento"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "greet",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "ola",
+          "synonyms": [
+            "boa noite",
+            "boa tarde",
+            "bom dia",
+            "oi",
+            "saudacoes"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "link",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "url",
+          "synonyms": [
+            "endereco de pagina",
+            "link",
+            "site"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "referencias",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "referencia",
+          "synonyms": [
+            "referir"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-currency",
+      "values": []
+    },
+    {
+      "entity": "sys-date",
+      "values": []
+    },
+    {
+      "entity": "sys-number",
+      "values": []
+    },
+    {
+      "entity": "sys-percentage",
+      "values": []
+    },
+    {
+      "entity": "sys-time",
+      "values": []
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Bem-vindo",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Seja bem vindo ao BiblioTron!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Bem-vindo"
+    },
+    {
+      "type": "standard",
+      "title": "Em outros casos",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Eu não entendi. Você pode tentar reformular a frase."
+              },
+              {
+                "text": "Você pode reformular sua afirmação? Eu não estou entendendo."
+              },
+              {
+                "text": "Eu não entendi o sentido."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "digress_in": "does_not_return",
+      "dialog_node": "Em outros casos",
+      "previous_sibling": "node_6_1614727344477",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_10_1614726348509",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1614726348518",
+      "previous_sibling": "handler_8_1614726348518"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_3_1614806693798",
+      "context": {
+        "time_": "@sys-time"
+      },
+      "conditions": "@sys-time",
+      "event_name": "input",
+      "dialog_node": "handler_3_1614806693814"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "boa noite"
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_3_1614806693798",
+      "conditions": "@sys-time>18:00:00",
+      "event_name": "filled",
+      "dialog_node": "handler_5_1614807769849",
+      "previous_sibling": "handler_9_1614806693814"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_10_1614726348509",
+      "context": {
+        "undefined": "$citacao"
+      },
+      "conditions": "$citacao",
+      "event_name": "input",
+      "dialog_node": "handler_8_1614726348518"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_3_1614806693798",
+      "event_name": "focus",
+      "dialog_node": "handler_9_1614806693814",
+      "previous_sibling": "handler_3_1614806693814"
+    },
+    {
+      "type": "standard",
+      "title": "Entrega de tcc",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Legal! para que vc entregue um trabalho acadêmico ou um TCC precisaremos que você entregue uma cópia impressa em capa dura na cor preta e letras douradas (Monografias e TCCs) ou na cor azul-marinho e letras douradas (Teses e Dissertações), uma mídia (CD ou DVD) contendo somente o PDF/A para as monografias e TCCs, uma cópia da versão final da dissertação ou tese no formato PDF/A encaminhada para o e-mail:\n, termo de autorização para a publicação eletrônica preenchido e assinado por todos os autores do trabalho, a entrega na biblioteca deverá ser feita pelo orientador ou pela secretaria do curso. A biblioteca não aceita trabalhos entregues diretamente pelos alunos! "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#EntregaTrabalhoAcademico",
+      "dialog_node": "node_1_1614725009601",
+      "previous_sibling": "node_9_1614727380393"
+    },
+    {
+      "type": "standard",
+      "title": "elaborar",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "temos alguns links que podem ser uteis para voce! voce precisa de ajuda com Citacoes, Estrutura ou Referencias? caso tenha duvidas configurando o world podemos te oferecer um template ja configurado!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#elaboracao",
+      "dialog_node": "node_2_1614726189455",
+      "previous_sibling": "node_7_1614725743540"
+    },
+    {
+      "type": "standard",
+      "title": "Latex",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "voce pode ver sobre o Latex editor de texto na pagina http://douglasrizzo.com.br/Classe-Latex-FEI/ ou no grupo do google https://groups.google.com/forum/#!topic/grupo-latex-fei/CmJgGQiFZy4"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Latex",
+      "dialog_node": "node_3_1614727038561",
+      "previous_sibling": "node_2_1614726189455"
+    },
+    {
+      "type": "standard",
+      "title": "Mendeley",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "O Mendeley é considerado uma rede social acadêmica que conecta pesquisadores e permite gerenciar referências, buscar, arquivar e compartilhar documentos! você pode acessa-lo na pagina https://www.mendeley.com/reference-management/reference-manager"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Mendeley",
+      "dialog_node": "node_3_1614727291429",
+      "previous_sibling": "node_4_1614727237491"
+    },
+    {
+      "type": "standard",
+      "title": "Ficha",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Nesse caso vc pode realizar sua ficha catalografica acessando a pagina http://sofia.fei.edu.br/ficha/"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#FichaCatalografica",
+      "dialog_node": "node_4_1614725664694",
+      "previous_sibling": "node_1_1614725009601"
+    },
+    {
+      "type": "standard",
+      "title": "Mecanismo online de referencia",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Mecanismo Online para Referências (MORE) é uma ferramenta gratuita e fácil de usar, que produz automaticamente citações no texto e referências no formato ABNT disponível no http://www.more.ufsc.br/"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#More",
+      "dialog_node": "node_4_1614727237491",
+      "previous_sibling": "node_3_1614727038561"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "você pode ver mais informações na pagina https://portal.fei.edu.br/biblioteca#trabalho"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1614726189455",
+      "conditions": "anything_else",
+      "dialog_node": "node_5_1614726904938",
+      "previous_sibling": "node_7_1614726850873"
+    },
+    {
+      "type": "standard",
+      "title": "Plagio",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "se você suspeita de plagio esses links podem te ajudar: \nhttp://www.plagiarismcombat.com/\nhttp://www.plagium.com/\nhttp://plagiarisma.net/ \nlembre-se que você sempre pode entrar com um processo judicial!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Plagio",
+      "dialog_node": "node_6_1614725731433",
+      "previous_sibling": "node_4_1614725664694"
+    },
+    {
+      "type": "standard",
+      "title": "bitly",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "bitly é um dos mais famosos gerenciadores e encurtadores de URL da internet. Confira!  https://bitly.com/"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#bitly",
+      "dialog_node": "node_6_1614727344477",
+      "previous_sibling": "node_3_1614727291429"
+    },
+    {
+      "type": "standard",
+      "title": "Normalizacao",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Você pode agendar sua orientação para trabalhos acadêmicos através desse link https://docs.google.com/forms/d/1HMTDr5U_1Dp8pVBV7WhXVrm7ULJyRAT99Ey6DSPZ3Fo/closedform"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#NormalizarTrabalhoAcademico",
+      "dialog_node": "node_7_1614725743540",
+      "previous_sibling": "node_6_1614725731433"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "esse link pode te guiar nas suas referencias https://gerenciador.fei.edu.br/Content/Arquivos/Template/junho2017/Themes/Resources/imagens/biblioteca/ta/referencias_2020.pdf"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1614726189455",
+      "conditions": "@referencias",
+      "dialog_node": "node_7_1614726850873",
+      "previous_sibling": "node_8_1614726724871"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "o guia para citacoes esta disponivel em https://gerenciador.fei.edu.br/Content/Arquivos/Template/junho2017/Themes/Resources/docs/vestibular/22020/citacao_rev-2020.pdf"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1614726189455",
+      "conditions": "@citacao",
+      "dialog_node": "node_8_1614726399697"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "esse link pode te ajudar https://gerenciador.fei.edu.br/Content/Arquivos/Template/junho2017/Themes/Resources/imagens/biblioteca/ta/estrutura_2020.pdf"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1614726189455",
+      "conditions": "@estrutura",
+      "dialog_node": "node_8_1614726724871",
+      "previous_sibling": "node_8_1614726399697"
+    },
+    {
+      "type": "standard",
+      "title": "abnt",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "as normas abnt podem ser encontradas facilemnte nesse link https://gerenciador.fei.edu.br/Content/Arquivos/Template/junho2017/Themes/Resources/docs/biblioteca/guia_reforma_ortografica_cp.pdf"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#ABNT",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_9_1614727380393",
+      "previous_sibling": "node_9_1614804688995"
+    },
+    {
+      "type": "standard",
+      "title": "Greeting",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#greet",
+      "dialog_node": "node_9_1614804688995",
+      "previous_sibling": "Bem-vindo"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ola boa tarde! Qual serviço da biblioteca eu posso ter o prazer de lhe ajudar?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1614804688995",
+      "conditions": "now().before('19:00:00') && now().after('12:00:00')",
+      "dialog_node": "response_1_1614808476360",
+      "previous_sibling": "response_8_1614808660857"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ola boa noite! Qual serviço da biblioteca eu posso ter o prazer de lhe ajudar?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1614804688995",
+      "conditions": "now().before('23:59:00') && now().after('18:00:00')",
+      "dialog_node": "response_7_1614808620419",
+      "previous_sibling": "response_1_1614808476360"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ola Bom dia! Qual serviço da biblioteca eu posso ter o prazer de lhe ajudar?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1614804688995",
+      "conditions": "now().before('12:00:00') && now().after('08:00:00')",
+      "dialog_node": "response_8_1614808660857"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ola boa noite! Qual serviço da biblioteca eu posso ter o prazer de lhe ajudar?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1614804688995",
+      "conditions": "now().before('08:00:00') && now().after('00:00:00')",
+      "dialog_node": "response_8_1614809111602",
+      "previous_sibling": "response_7_1614808620419"
+    },
+    {
+      "type": "slot",
+      "parent": "node_2_1614726189455",
+      "dialog_node": "slot_10_1614726348509",
+      "previous_sibling": "node_5_1614726904938"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_9_1614804688995",
+      "variable": "$time_",
+      "dialog_node": "slot_3_1614806693798",
+      "previous_sibling": "response_8_1614809111602"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "disambiguation": {
+      "prompt": "Você quis dizer:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "Nenhuma das anteriores"
+    },
+    "system_entities": {
+      "enabled": true
+    },
+    "human_agent_assist": {
+      "prompt": "Você quis dizer:"
+    }
+  },
+  "learning_opt_out": false,
+  "name": "Aula1",
+  "language": "pt-br",
+  "description": ""
+}
