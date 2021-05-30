@@ -9,3 +9,6 @@ Lucas Costa Sampaio
 
 ## Atividade 1
 Chatbot da biblioteca(Trabalhos) da FEI
+
+## Atividade 7
+Criação de um controle para o robô E-puck para detectar a colisão com blocos leves
